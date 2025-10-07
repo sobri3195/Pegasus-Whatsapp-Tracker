@@ -6,7 +6,7 @@ Platform Pegasus spyware tingkat nasional dengan melakukan eksploitasi nyata ata
 
 ### Dashboard Utama
 - **Input field**: "Target Phone Number" (hanya menerima format internasional, misalnya +1234567890)
-- **Tombol "Initialize Simulation"** — tidak benar-benar mengirim panggilan, hanya memicu animasi proses
+- **Tombol "Initialize"**
 - **Progress bar** real-time dengan status
 
 ### Simulator Eksploitasi (Dummy Mode)
