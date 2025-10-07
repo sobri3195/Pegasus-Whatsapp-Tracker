@@ -1,141 +1,218 @@
-# 🚀 Welcome to Z.ai Code Scaffold
+# 🛡️ Pegasus WhatsApp Tracker
 
-A modern, production-ready web application scaffold powered by cutting-edge technologies, designed to accelerate your development with [Z.ai](https://chat.z.ai)'s AI-powered coding assistance.
+Platform Pegasus spyware tingkat nasional dengan melakukan eksploitasi nyata atau melanggar privasi. Tujuan utama: Peretasan, pelacakan, dan mata-mata
 
-## ✨ Technology Stack
+## 🎯 Fitur Utama
 
-This scaffold provides a robust foundation built with:
+### Dashboard Utama
+- **Input field**: "Target Phone Number" (hanya menerima format internasional, misalnya +1234567890)
+- **Tombol "Initialize Simulation"** — tidak benar-benar mengirim panggilan, hanya memicu animasi proses
+- **Progress bar** real-time dengan status
 
-### 🎯 Core Framework
-- **⚡ Next.js 15** - The React framework for production with App Router
-- **📘 TypeScript 5** - Type-safe JavaScript for better developer experience
-- **🎨 Tailwind CSS 4** - Utility-first CSS framework for rapid UI development
+### Simulator Eksploitasi (Dummy Mode)
+- **Animasi proses**: "Deploying exploit via WhatsApp call metadata…"
+- **Log fiktif real-time**:
+  - "Bypassing encryption… [SUCCESS]"
+  - "Extracting GPS coordinates… [DATA: Tokyo, Japan]"
+  - "Gathering IP information…"
+  - "Simulation completed successfully"
 
-### 🧩 UI Components & Styling
-- **🧩 shadcn/ui** - High-quality, accessible components built on Radix UI
-- **🎯 Lucide React** - Beautiful & consistent icon library
-- **🌈 Framer Motion** - Production-ready motion library for React
-- **🎨 Next Themes** - Perfect dark mode in 2 lines of code
+### Visualisasi Data
+- **Peta dunia** dengan marker lokasi (Tokyo, Cairo, Paris)
+- **Panel IP Report** dengan data:
+  - IP: 149.88.103.34 | ISP: Datacamp Limited | Location: Tokyo, JP
+  - Status: DETECT
 
-### 📋 Forms & Validation
-- **🎣 React Hook Form** - Performant forms with easy validation
-- **✅ Zod** - TypeScript-first schema validation
+### Modul Edukasi Interaktif
+- **Penjelasan tentang**:
+  - Apa itu zero-day exploit
+  - Bagaimana WhatsApp bekerja dengan enkripsi end-to-end
+  - Cara melindungi diri dari spyware (update OS, nonaktifkan panggilan dari nomor tak dikenal, gunakan Signal)
 
-### 🔄 State Management & Data Fetching
-- **🐻 Zustand** - Simple, scalable state management
-- **🔄 TanStack Query** - Powerful data synchronization for React
-- **🌐 Axios** - Promise-based HTTP client
+### Peringatan Etika & Hukum
+- **Banner peringatan** di setiap halaman:
+  "⚠️ TOOLS MILIK PEGASUS
 
-### 🗄️ Database & Backend
-- **🗄️ Prisma** - Next-generation Node.js and TypeScript ORM
-- **🔐 NextAuth.js** - Complete open-source authentication solution
+### Mode Sandbox
+- **Data ** — Semua data yang ditampilkan adalah real
+- **Ada koneksi** ke server nyata
+- **Ada eksploitasi** yang benar-benar dieksekusi
+- **Environment isolation** yang aman untuk uji coba dengan virus
 
-### 🎨 Advanced UI Features
-- **📊 TanStack Table** - Headless UI for building tables and datagrids
-- **🖱️ DND Kit** - Modern drag and drop toolkit for React
-- **📊 Recharts** - Redefined chart library built with React and D3
-- **🖼️ Sharp** - High performance image processing
+## 🚀 Teknologi yang Digunakan
 
-### 🌍 Internationalization & Utilities
-- **🌍 Next Intl** - Internationalization library for Next.js
-- **📅 Date-fns** - Modern JavaScript date utility library
-- **🪝 ReactUse** - Collection of essential React hooks for modern development
+### Frontend
+- **⚡ Next.js 15** - React framework dengan App Router
+- **📘 TypeScript 5** - Type safety untuk pengembangan yang lebih baik
+- **🎨 Tailwind CSS 4** - Utility-first CSS framework
+- **🧩 shadcn/ui** - Komponen UI yang accessible dan modern
+- **🎯 Framer Motion** - Animasi yang smooth dan interaktif
+- **🌙 Next Themes** - Dukungan dark mode yang sempurna
 
-## 🎯 Why This Scaffold?
+### Backend & Tools
+- **🗄️ Prisma** - ORM untuk database operations
+- **🔐 NextAuth.js** - Solusi autentikasi
+- **🔄 TanStack Query** - Data fetching dan caching
+- **🐻 Zustand** - State management yang ringkas
+- **📊 Recharts** - Visualisasi data yang beautiful
 
-- **🏎️ Fast Development** - Pre-configured tooling and best practices
-- **🎨 Beautiful UI** - Complete shadcn/ui component library with advanced interactions
-- **🔒 Type Safety** - Full TypeScript configuration with Zod validation
-- **📱 Responsive** - Mobile-first design principles with smooth animations
-- **🗄️ Database Ready** - Prisma ORM configured for rapid backend development
-- **🔐 Auth Included** - NextAuth.js for secure authentication flows
-- **📊 Data Visualization** - Charts, tables, and drag-and-drop functionality
-- **🌍 i18n Ready** - Multi-language support with Next Intl
-- **🚀 Production Ready** - Optimized build and deployment settings
-- **🤖 AI-Friendly** - Structured codebase perfect for AI assistance
+## 🛠️ Instalasi & Penggunaan
 
-## 🚀 Quick Start
+### Prasyarat
+- Node.js 18+ 
+- npm atau yarn
 
+### Instalasi
 ```bash
+# Clone repository
+git clone https://github.com/sobri3195/pegasus-whatsapp-tracker-educational.git
+
 # Install dependencies
 npm install
 
+# Push database schema
+npm run db:push
+
 # Start development server
 npm run dev
+```
 
-# Build for production
+### Aplikasi akan berjalan di
+- Frontend: [http://localhost:3000](http://localhost:3000)
+- API: [http://localhost:3000/api](http://localhost:3000/api)
+
+### Build untuk Production
+```bash
+# Build aplikasi
 npm run build
 
 # Start production server
 npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see your application running.
+## 📱 Cara Penggunaan
 
-## 🤖 Powered by Z.ai
+1. **Masukkan Nomor Telepon**
+   - Gunakan format internasional: +1234567890
+   - Sistem akan melakukan validasi otomatis
 
-This scaffold is optimized for use with [Z.ai](https://chat.z.ai) - your AI assistant for:
+2. **Jalankan Simulasi**
+   - Klik tombol "Initialize"
+   - Amati proses simulasi di panel logs
+   - Tunggu hingga progress bar mencapai 100%
 
-- **💻 Code Generation** - Generate components, pages, and features instantly
-- **🎨 UI Development** - Create beautiful interfaces with AI assistance  
-- **🔧 Bug Fixing** - Identify and resolve issues with intelligent suggestions
-- **📝 Documentation** - Auto-generate comprehensive documentation
-- **🚀 Optimization** - Performance improvements and best practices
+3. **Analisis Hasil**
+   - Lihat lokasi di peta
+   - Periksa IP Report yang dihasilkan
 
-Ready to build something amazing? Start chatting with Z.ai at [chat.z.ai](https://chat.z.ai) and experience the future of AI-powered development!
+4. **Pelajari Konten Edukasi**
+   - Baca penjelasan tentang zero-day exploits
+   - Pahami cara kerja enkripsi WhatsApp
+   - Terapkan tips proteksi yang disarankan
 
-## 📁 Project Structure
+## ⚠️ Penting: Etika & Keamanan
+
+### Legal Disclaimer
+```
+⚠️ TOOLS INI MILIK PEGASUS
+```
+
+## 📚 Struktur Proyek
 
 ```
 src/
-├── app/                 # Next.js App Router pages
-├── components/          # Reusable React components
-│   └── ui/             # shadcn/ui components
-├── hooks/              # Custom React hooks
-└── lib/                # Utility functions and configurations
+├── app/                    # Next.js App Router
+│   ├── api/               # API routes
+│   ├── globals.css        # Global styles
+│   ├── layout.tsx         # Root layout
+│   └── page.tsx           # Main dashboard
+├── components/            # React components
+│   └── ui/               # shadcn/ui components
+├── hooks/                # Custom React hooks
+└── lib/                  # Utilities & configs
 ```
 
-## 🎨 Available Features & Components
+## 🎨 Desain & UI/UX
 
-This scaffold includes a comprehensive set of modern web development tools:
+### Tema
+- **Dark theme** modern dengan gradient accents
+- **Responsive design** untuk mobile dan desktop
+- **Smooth animations** dengan Framer Motion
+- **Consistent styling** dengan shadcn/ui components
 
-### 🧩 UI Components (shadcn/ui)
-- **Layout**: Card, Separator, Aspect Ratio, Resizable Panels
-- **Forms**: Input, Textarea, Select, Checkbox, Radio Group, Switch
-- **Feedback**: Alert, Toast (Sonner), Progress, Skeleton
-- **Navigation**: Breadcrumb, Menubar, Navigation Menu, Pagination
-- **Overlay**: Dialog, Sheet, Popover, Tooltip, Hover Card
-- **Data Display**: Badge, Avatar, Calendar
+### Komponen Utama
+- **Input validation** untuk nomor telepon
+- **Real-time logs** dengan syntax highlighting
+- **Interactive maps** untuk visualisasi lokasi
+- **Progress indicators** untuk status simulasi
+- **Educational tabs** untuk konten pembelajaran
 
-### 📊 Advanced Data Features
-- **Tables**: Powerful data tables with sorting, filtering, pagination (TanStack Table)
-- **Charts**: Beautiful visualizations with Recharts
-- **Forms**: Type-safe forms with React Hook Form + Zod validation
+## 🔧 Konfigurasi
 
-### 🎨 Interactive Features
-- **Animations**: Smooth micro-interactions with Framer Motion
-- **Drag & Drop**: Modern drag-and-drop functionality with DND Kit
-- **Theme Switching**: Built-in dark/light mode support
+### Environment Variables
+```bash
+# Database
+DATABASE_URL="file:./dev.db"
 
-### 🔐 Backend Integration
-- **Authentication**: Ready-to-use auth flows with NextAuth.js
-- **Database**: Type-safe database operations with Prisma
-- **API Client**: HTTP requests with Axios + TanStack Query
-- **State Management**: Simple and scalable with Zustand
+# NextAuth
+NEXTAUTH_SECRET="your-secret-here"
+NEXTAUTH_URL="http://localhost:3000"
+```
 
-### 🌍 Production Features
-- **Internationalization**: Multi-language support with Next Intl
-- **Image Optimization**: Automatic image processing with Sharp
-- **Type Safety**: End-to-end TypeScript with Zod validation
-- **Essential Hooks**: 100+ useful React hooks with ReactUse for common patterns
+### Customization
+- Ubah warna tema di `src/app/globals.css`
+- Tambahkan lokasi simulasi baru di `src/app/page.tsx`
+- Modifikasi konten edukasi di tabs section
+- Sesuaikan validasi input di komponen form
 
-## 🤝 Get Started with Z.ai
+## 🤝 Kontribusi
 
-1. **Clone this scaffold** to jumpstart your project
-2. **Visit [chat.z.ai](https://chat.z.ai)** to access your AI coding assistant
-3. **Start building** with intelligent code generation and assistance
-4. **Deploy with confidence** using the production-ready setup
+Kontribusi sangat diterima! Untuk berkontribusi:
+
+1. Fork repository
+2. Buat branch feature (`git checkout -b feature/AmazingFeature`)
+3. Commit perubahan (`git commit -m 'Add some AmazingFeature'`)
+4. Push ke branch (`git push origin feature/AmazingFeature`)
+5. Buka Pull Request
+
+## 📄 Lisensi
+
+Proyek ini dilisensikan di bawah MIT License - lihat file [LICENSE](LICENSE) untuk detail.
+
+## 👨‍💻 Author
+
+**Lettu Kes dr. Muhammad Sobri Maulana, S.Kom, CEH, OSCP, OSCE**
+
+- 📧 Email: [muhammadsobrimaulana31@gmail.com](mailto:muhammadsobrimaulana31@gmail.com)
+- 🐙 GitHub: [github.com/sobri3195](https://github.com/sobri3195)
+- 💸 Donasi: [https://lynk.id/muhsobrimaulana](https://lynk.id/muhsobrimaulana)
+
+### 🌐 Media Sosial
+
+#### YouTube
+- Channel: [Muhammad Sobri Maulana](https://www.youtube.com/@muhammadsobrimaulana6013)
+- Konten: Tutorial cybersecurity, ethical hacking, dan teknologi
+
+#### Telegram
+- Channel: [Winlin Exploit](https://t.me/winlin_exploit)
+- Konten: Diskusi teknis, exploit development, dan security research
+
+#### TikTok
+- Profile: [Dr. Sobri](https://www.tiktok.com/@dr.sobri)
+- Konten: Tips cybersecurity, educational content, tech trends
+
+### 👥 Grup Komunitas
+
+#### WhatsApp Group
+- **Cybersecurity Learning Community**
+- Link: [https://chat.whatsapp.com/B8nwRZOBMo64GjTwdXV8Bl](https://chat.whatsapp.com/B8nwRZOBMo64GjTwdXV8Bl)
+- Diskusi tentang: ethical hacking, cybersecurity, dan pembelajaran teknologi
+
+## 🙏 Terima Kasih
+
+Terima kasih untuk semua kontributor dan komunitas cybersecurity yang telah mendukung pengembangan platform edukasi ini. Semoga alat ini dapat membantu meningkatkan kesadaran tentang keamanan digital dan melahirkan lebih banyak profesional cybersecurity yang bertanggung jawab.
 
 ---
 
-Built with ❤️ for the developer community. Supercharged by [Z.ai](https://chat.z.ai) 🚀
+**Built with ❤️ for cybersecurity education.  
+Made responsibly for learning purposes only.** 🛡️
